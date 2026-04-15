@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F032E6;
+  --color-accent: #00d2ff;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #0a0a0a;
+  --color-surface-dark: #1e120c;
+  --font-display: "Public Sans", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  --bg-dark-home: #050505;
+  --bg-card-home: #0d0d0d;
+  --text-main-home: #e0e0e0;
+  --text-muted-home: #a0a0a0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background-dark);
+  color: #e0e0e0;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Home Page Specific Styles */
+.abstract-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.shape {
+  position: absolute;
+  filter: blur(80px);
+  border-radius: 50%;
+}
+.shape-1 {
+  width: 500px;
+  height: 500px;
+  background: var(--color-primary);
+  top: -200px;
+  right: -100px;
+}
+.shape-2 {
+  width: 400px;
+  height: 400px;
+  background: var(--color-accent);
+  bottom: -100px;
+  left: -150px;
+}
+
+.btn-primary-home {
+  background: var(--color-accent);
+  color: var(--bg-dark-home);
+  padding: 1.5rem 3.5rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-decoration: none;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  transition: all 0.3s ease;
+}
+.btn-secondary-home {
+  border: 2px solid var(--text-main-home);
+  color: var(--text-main-home);
+  padding: 1.5rem 3.5rem;
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.avatar-wrapper {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  background: var(--color-primary);
+  border: 0.5rem solid var(--color-accent);
+}
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.2);
+  mix-blend-mode: luminosity;
+}
+.floating-blob {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-accent));
+  z-index: -1;
+  filter: blur(40px);
+  border-radius: 50%;
+  top: -10%;
+  left: -10%;
+}
+
+.about-title {
+  font-size: 5rem;
+  font-weight: 900;
+  transform: rotate(-90deg) translate(-50%, -100%);
+  transform-origin: left top;
+  position: absolute;
+  color: rgba(255,255,255,0.05);
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.stat-box {
+  background: var(--color-primary);
+  padding: 2rem;
+  transform: rotate(3deg);
+  border-radius: 1rem;
+}
+.stat-box:nth-child(even) {
+  transform: rotate(-5deg);
+  background: var(--color-accent);
+  color: var(--bg-dark-home);
+}
+
+.skill-item-home {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  background: var(--bg-card-home);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.skill-item-home:nth-child(odd) { transform: translateY(-2rem); }
+.skill-item-home:nth-child(even) { transform: translateY(2rem); }
+.skill-item-home:hover {
+  background: var(--color-primary);
+  transform: scale(1.1) rotate(5deg);
+  z-index: 10;
+}
+
+.project-card-home {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: var(--bg-card-home);
+  transition: all 0.5s ease;
+}
+.project-card-home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+  opacity: 0.7;
+}
+.project-info-home {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(5, 5, 5, 0.95));
+  transform: translateY(20%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.project-card-home:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+  z-index: 20;
+}
+.project-card-home:hover img {
+  opacity: 0.3;
+  transform: scale(1.1);
+}
+.project-card-home:hover .project-info-home {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.exp-item-home {
+  position: relative;
+}
+.exp-item-home::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-accent);
+  border-radius: 50%;
+  transform: translateY(-50%) scale(0);
+  transition: transform 0.3s ease;
+}
+.exp-item-home:hover::before { transform: translateY(-50%) scale(1.5); }
