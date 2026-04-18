@@ -15,16 +15,16 @@ export default function Experience() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-6 md:px-12 py-24">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-          
+
           {/* Left Column - Timeline */}
           <div className="lg:col-span-8 relative">
             {/* Timeline Line */}
             <div className="absolute left-8 top-0 bottom-0 w-[2px] bg-white/5"></div>
 
             <div className="space-y-24">
-              
+
               {/* Experience Item 1 */}
               <div className="relative pl-24 group">
                 {/* Timeline Dot */}
@@ -33,7 +33,7 @@ export default function Experience() {
 
                 <div className="bg-[#111] border border-white/5 rounded-2xl p-8 hover:border-primary/30 transition-colors relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-3xl rounded-full group-hover:bg-primary/10 transition-colors"></div>
-                  
+
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4 relative z-10">
                     <div>
                       <h3 className="text-3xl font-black tracking-tight mb-1">Senior Lead Web Developer</h3>
@@ -151,14 +151,14 @@ export default function Experience() {
 
           {/* Right Column - Education & Certifications */}
           <div className="lg:col-span-4 space-y-12">
-            
+
             {/* Education */}
             <div>
               <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-8 flex items-center gap-3">
                 <span className="w-8 h-[1px] bg-primary"></span>
                 Educación
               </h2>
-              
+
               <div className="space-y-8">
                 <div className="relative pl-6 border-l border-white/10">
                   <div className="absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-gray-500"></div>
@@ -175,7 +175,7 @@ export default function Experience() {
                 <span className="w-8 h-[1px] bg-primary"></span>
                 Certificaciones
               </h2>
-              
+
               <div className="space-y-4">
                 <div className="p-4 bg-[#111] border border-white/5 rounded-xl flex items-center gap-4 hover:border-primary/30 transition-colors cursor-pointer group">
                   <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
@@ -186,7 +186,7 @@ export default function Experience() {
                     <p className="text-xs text-gray-500">Amazon Web Services • 2021</p>
                   </div>
                 </div>
-                
+
                 <div className="p-4 bg-[#111] border border-white/5 rounded-xl flex items-center gap-4 hover:border-primary/30 transition-colors cursor-pointer group">
                   <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                     <span className="material-symbols-outlined text-gray-400 group-hover:text-primary">verified</span>
@@ -201,7 +201,7 @@ export default function Experience() {
 
             {/* Download CV */}
             <div className="pt-8">
-              <a href="#" className="flex items-center justify-center gap-3 w-full py-4 bg-white/5 hover:bg-primary text-white font-bold rounded-xl transition-colors group">
+              <a href="https://serviciospalaciosweb.com/wp-content/uploads/2025/02/curriculum.png" className="flex items-center justify-center gap-3 w-full py-4 bg-white/5 hover:bg-primary text-white font-bold rounded-xl transition-colors group">
                 <span className="material-symbols-outlined group-hover:animate-bounce">download</span>
                 Descargar CV Completo
               </a>
