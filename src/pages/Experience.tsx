@@ -201,7 +201,7 @@ export default function Experience() {
 
             {/* Download CV */}
             <div className="pt-8">
-              <a href="https://serviciospalaciosweb.com/wp-content/uploads/2025/02/curriculum.png" className="flex items-center justify-center gap-3 w-full py-4 bg-white/5 hover:bg-primary text-white font-bold rounded-xl transition-colors group">
+              <a href="https://serviciospalaciosweb.com/wp-content/uploads/2026/04/CV.pdf" className="flex items-center justify-center gap-3 w-full py-4 bg-white/5 hover:bg-primary text-white font-bold rounded-xl transition-colors group">
                 <span className="material-symbols-outlined group-hover:animate-bounce">download</span>
                 Descargar CV Completo
               </a>
