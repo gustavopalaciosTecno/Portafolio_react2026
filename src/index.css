@@ -87,8 +87,9 @@ body {
 }
 
 .avatar-wrapper {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
   position: relative;
   overflow: hidden;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -139,8 +140,10 @@ body {
 
 .skill-item-home {
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: 100%;
+  max-width: 15rem;
+  aspect-ratio: 1;
+  margin: 0 auto;
   background: var(--bg-card-home);
   display: flex;
   flex-direction: column;
